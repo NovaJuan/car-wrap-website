@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,7 +16,8 @@ header{
     width: 100%;
     position: relative;
     overflow: hidden;
-    box-shadow: 1px 7px 20px #000;
+    -webkit-box-shadow: 1px 7px 20px #000;
+            box-shadow: 1px 7px 20px #000;
 }
 
 header .section1,header .section2{
@@ -37,7 +39,9 @@ header .text{
     position: absolute;
     top:46%;
     left: 10%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     color: #ffbf00;
     display: none;
     overflow: hidden;
@@ -69,6 +73,8 @@ header .text #trans-btn{
     font-size: 1.3em;
     cursor: pointer;
     margin-top: 1em;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     outline: none;
     opacity: 0;
@@ -109,7 +115,9 @@ header .down-arrow{
     font-size: 1.2em;
     color: #ffbf00;
     opacity: 0;
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+            transform: translateY(-50px);
 }
 
 nav{
@@ -176,6 +184,8 @@ nav #nav-bg{
     background: #9c9c9c;
     z-index: -1;
     opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
@@ -202,6 +212,8 @@ nav .mobile-links{
     width: 50%;
     z-index: 1001;
     border-left: #a67c00 solid 2px;
+    -webkit-transition: .2s all ease-in-out;
+    -o-transition: .2s all ease-in-out;
     transition: .2s all ease-in-out; 
 }
 nav .mobile-links ul{
@@ -264,7 +276,9 @@ nav .mobile-links #close-nav{
     height: 100%;
     width: 250px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     border-bottom: #a67c00 solid 3px;
     border-top: #a67c00 solid 3px;
     border-radius: 2px;
@@ -272,7 +286,8 @@ nav .mobile-links #close-nav{
 
 
 #services .service{
-    box-shadow: 1px 3px 10px #000;
+    -webkit-box-shadow: 1px 3px 10px #000;
+            box-shadow: 1px 3px 10px #000;
     overflow: hidden;  
 }
 
@@ -306,7 +321,9 @@ nav .mobile-links #close-nav{
     width: 100%
 }
 #services .service:hover img{
-    transform: scale(110%,110%);
+    -webkit-transform: scale(110%,110%);
+        -ms-transform: scale(110%,110%);
+            transform: scale(110%,110%);
 }
 
 #gallery{
@@ -332,7 +349,9 @@ nav .mobile-links #close-nav{
     height: 100%;
     width: 250px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     border-bottom: #a67c00 solid 3px;
     border-top: #a67c00 solid 3px;
     border-radius: 2px;
@@ -341,9 +360,11 @@ nav .mobile-links #close-nav{
 #gallery img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    /* position: relative; */
 }
 
 #gallery .gallery-wrapper{
@@ -365,6 +386,8 @@ nav .mobile-links #close-nav{
     height: 100%;
     background: rgba(0,0,0,.7);
     opacity: 0;
+    -webkit-transition: .2s all ease-in-out;
+    -o-transition: .2s all ease-in-out;
     transition: .2s all ease-in-out;
 }
 #gallery .img:hover .img-text{
@@ -376,44 +399,68 @@ nav .mobile-links #close-nav{
     color: #cecece;
     top:50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 
 #gallery .gallery-wrapper{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 350px 350px 350px;
     grid-template-rows: 350px 350px 350px;
-    grid-template-areas: 
+        grid-template-areas: 
     "img1 img1 img2 img3"
     "img4 img5 img6 img6"
     "img7 img8 img6 img6"
 }
 
 #gallery .img1{
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: img1;
 }
 
 #gallery .img2{
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
     grid-area: img2;
 }
 #gallery .img3{
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
     grid-area: img3;
 }
 #gallery .img4{
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: img4;
 }
 #gallery .img5{
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: img5;
 }
 #gallery .img6{
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
     grid-area: img6;
 }
 #gallery .img7{
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: img7;
 }
 
 #gallery .img8{
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: img8;
 }
 
@@ -439,7 +486,9 @@ nav .mobile-links #close-nav{
     height: 100%;
     width: 250px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     border-bottom: #a67c00 solid 3px;
     border-top: #a67c00 solid 3px;
     border-radius: 2px;
@@ -495,16 +544,54 @@ footer{
         font-size: 1;
     }
     #gallery .gallery-wrapper{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: 200px 200px 200px 200px 200px 200px;
         grid-template-rows: 200px 200px 200px 200px 200px 200px;
-        grid-template-areas: 
+            grid-template-areas: 
         "img1 img1"
         "img2 img3"
         "img4 img5"
         "img6 img6"
         "img6 img6"
         "img7 img8";
+    }
+    #gallery .img1{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+    }
+    #gallery .img2{
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    #gallery .img3{
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+    #gallery .img4{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #gallery .img5{
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+    #gallery .img6{
+        -ms-grid-row: 4;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+    }
+    #gallery .img7{
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+    }
+    #gallery .img8{
+        -ms-grid-row: 6;
+        -ms-grid-column: 2;
     }
 }
 
@@ -555,7 +642,9 @@ footer{
         font-size: 1.2em;
         color: #ffbf00;
         opacity: 1;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
     }
 
     header .down-arrow{
@@ -593,10 +682,13 @@ footer{
 
 @media screen and (max-width:600px){
     #gallery .gallery-wrapper{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px;
         grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px;
-        grid-template-areas: 
+            grid-template-areas: 
         "img1"
         "img2"
         "img3"
@@ -606,5 +698,40 @@ footer{
         "img6"
         "img7"
         "img8";
+    }
+    #gallery .img1{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #gallery .img2{
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    #gallery .img3{
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #gallery .img4{
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+    #gallery .img5{
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    #gallery .img6{
+        -ms-grid-row: 6;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    #gallery .img7{
+        -ms-grid-row: 8;
+        -ms-grid-column: 1;
+    }
+    #gallery .img8{
+        -ms-grid-row: 9;
+        -ms-grid-column: 1;
     }
 }
