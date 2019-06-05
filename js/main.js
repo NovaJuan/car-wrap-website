@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     
         var currentBG = 0;
-        var bgs = ['url(images/header-bg-1.png)','url(images/header-bg-2.png)','url(images/header-bg-3.png)']
+        var bgs = ['url(images/header-bg-1.jpg)','url(images/header-bg-2.jpg)','url(images/header-bg-3.jpg)']
         document.getElementById('trans-btn').addEventListener('click',function(){
             this.disabled=true;
             if(currentBG >= 2){
